@@ -25,6 +25,7 @@ Job::Job(int jobNr, std::string taskList) :
 	while (rit != rend)
 	{
 		std::cout << rit->str() << " " << std::endl;
+		//TODO: create tasks and put them into the tasks vector
 		++rit;
 	}
 }
