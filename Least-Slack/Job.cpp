@@ -7,9 +7,8 @@
 
 #include "Job.h"
 
-Job::Job()
+Job::Job():jobNr(0)
 {
-	// TODO Auto-generated constructor stub
 
 }
 

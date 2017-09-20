@@ -11,7 +11,7 @@
 #include <fstream>
 #include <string>
 
-JobShop::JobShop()
+JobShop::JobShop():nrMachines(0), nrJobs(0)
 {
 }
 
@@ -35,10 +35,16 @@ JobShop::JobShop(int argc, char** argv)
 		std::string line;
 		for (size_t i = 0; getline(istr, line); ++i)
 		{
+			//Read out machines and jobs
 			if (i == 0)
 			{
 				this->nrMachines = line[0];
 				this->nrJobs = line[3];
+			}
+			//Read out Jobs
+			else{
+				//Job j(i, line);
+				//this->jobs.push_back()
 			}
 		}
 

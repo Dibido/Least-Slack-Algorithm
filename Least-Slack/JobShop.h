@@ -8,6 +8,9 @@
 #ifndef JOBSHOP_H_
 #define JOBSHOP_H_
 
+#include <vector>
+#include "Job.h"
+
 class JobShop
 {
 public:
@@ -15,6 +18,7 @@ public:
 	JobShop(int argc, char **argv);
 	virtual ~JobShop();
 private:
+	std::vector<Job> jobs;
 	int nrMachines;
 	int nrJobs;
 };
