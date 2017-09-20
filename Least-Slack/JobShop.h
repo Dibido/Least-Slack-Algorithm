@@ -14,6 +14,9 @@ public:
 	JobShop();
 	JobShop(int argc, char **argv);
 	virtual ~JobShop();
+private:
+	int nrMachines;
+	int nrJobs;
 };
 
 #endif /* JOBSHOP_H_ */
