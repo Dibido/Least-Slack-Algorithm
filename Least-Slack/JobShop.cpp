@@ -11,7 +11,8 @@
 #include <fstream>
 #include <string>
 
-JobShop::JobShop():nrMachines(0), nrJobs(0)
+JobShop::JobShop() :
+		nrMachines(0), nrJobs(0)
 {
 }
 
@@ -28,7 +29,8 @@ JobShop::JobShop(int argc, char** argv)
 		//Read in input file
 		std::string input = argv[1];
 		std::ifstream istr(input);
-		if(!istr.is_open()){
+		if (!istr.is_open())
+		{
 			std::cout << "File could not be opened" << std::endl;
 			exit(-1);
 		}
@@ -39,12 +41,14 @@ JobShop::JobShop(int argc, char** argv)
 			if (i == 0)
 			{
 				this->nrMachines = line[0];
-				this->nrJobs = line[3];
+				this->nrJobs = line[2];
 			}
 			//Read out Jobs
-			else{
-				//Job j(i, line);
-				//this->jobs.push_back()
+			else
+			{
+				//Create jobs
+				Job j(i, line);
+				this->jobs.push_back(j);
 			}
 		}
 

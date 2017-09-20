@@ -19,8 +19,8 @@ public:
 	virtual ~JobShop();
 private:
 	std::vector<Job> jobs;
-	int nrMachines;
-	int nrJobs;
+	unsigned char nrMachines;
+	unsigned char nrJobs;
 };
 
 #endif /* JOBSHOP_H_ */
