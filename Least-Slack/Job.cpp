@@ -18,7 +18,7 @@ Job::Job(int jobNr, std::string taskList) :
 		jobNr(jobNr)
 {
 	//Dissect taskList and create tasks.
-	std::regex regex("\\d+\\s+");
+	std::regex regex("\\d+\\s+");;
 	std::regex_iterator<std::string::iterator> rit(taskList.begin(), taskList.end(), regex);
 	std::regex_iterator<std::string::iterator> rend;
 
