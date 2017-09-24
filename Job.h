@@ -41,6 +41,7 @@ public:
 	void setEndTime(int endTime);
 
 	void removeCompletedTask();
+
 	bool isJobStarted() const;
 	void setJobStarted(bool jobStarted);
 

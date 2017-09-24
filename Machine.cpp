@@ -16,7 +16,7 @@ Machine::~Machine()
 {
 }
 
-int Machine::getMachineId() const
+unsigned short Machine::getMachineId() const
 {
 	return machineId;
 }

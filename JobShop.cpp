@@ -113,7 +113,6 @@ void JobShop::schedule() {
 		std::cout << "Job " << J.getJobNr() << " Started at T: "
 				<< J.getBeginTime() << " and finished on T: " << J.getEndTime()
 				<< std::endl;
-
 	}
 }
 

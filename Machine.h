@@ -14,14 +14,16 @@ class Machine
 public:
 	Machine(unsigned short machineId);
 	virtual ~Machine();
-	int getMachineId() const;
+
+	unsigned short getMachineId() const;
 	void setMachineId(unsigned char machineId);
+
 	bool isInUse() const;
 	void setInUse(bool inUse);
 
 private:
 	bool inUse;
-	unsigned char machineId;
+	unsigned short machineId;
 };
 
 std::ostream& operator<<(std::ostream& os, const Machine& m);
